@@ -1,6 +1,5 @@
 
-//A Simple game of life programme 
-
+//conway's game of life simulation
 #include<iostream>
 #include<cstdio>
 #define c 10
