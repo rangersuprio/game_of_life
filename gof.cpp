@@ -70,8 +70,8 @@ int iterate(int grid[][c],size_t n){
 
     for(i=0;i<n;i++){
         for(j=0;j<c;j++){
-            if(check_neighbours(grid,n,i,j)>2) grid[i][j]=0;
-            else if(check_neighbours(grid,n,i,j)==2) grid[i][j]=1;
+            if(check_neighbours(grid,n,i,j)<2) grid[i][j]=0;
+            else if(check_neighbours(grid,n,i,j)==3) grid[i][j]=1;
             else if(check_neighbours(grid,n,i,j)>3) grid[i][j]=0;
         }
     }
